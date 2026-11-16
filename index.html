@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex,nofollow"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Scholarship"><meta name="theme-color" content="#F2F5F6" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#0E1618" media="(prefers-color-scheme: dark)"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon-192.png"><link rel="apple-touch-icon" href="apple-touch-icon.png"><title>Scholarship Tracker</title><style>html{color-scheme:light}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style></head><body>
+<script>
+/* Local data layer: same calls the page used on claude.ai, stored in this browser instead. */
+(function () {
+  "use strict";
+  var KEY = "scholarship-tracker-v1", SEED = {"seed": 1, "store": {"settings": {"main": {"ieltsDate": "", "ieltsScore": ""}}, "tasks": {"t-ielts-20261115": {"custom": false, "date": "2026-11-15", "detail": "Your first one, to see your level. All 4 parts, 40 questions, 30 minutes. Then mark it and note your band.", "done": false, "doneAt": "", "kind": "habit", "order": 55, "programme": "", "title": "IELTS mock test: Listening", "track": "ielts"}, "t-ielts-20261116": {"custom": false, "date": "2026-11-16", "detail": "All 4 parts, 40 questions, 30 minutes, played once. Then mark it and note your band.", "done": false, "doneAt": "", "kind": "habit", "order": 56, "programme": "", "title": "IELTS mock test: Listening", "track": "ielts"}, "t-ielts-20261117": {"custom": false, "date": "2026-11-17", "detail": "All 3 passages, 40 questions, 60 minutes, no breaks. Then mark it and note your band.", "done": false, "doneAt": "", "kind": "habit", "order": 57, "programme": "", "title": "IELTS mock test: Reading", "track": "ielts"}, "t-ielts-20261118": {"custom": false, "date": "2026-11-18", "detail": "Task 1 in 20 minutes and Task 2 in 40 minutes, by the clock. Compare with a band 7 sample answer.", "done": false, "doneAt": "", "kind": "habit", "order": 58, "programme": "", "title": "IELTS mock test: Writing", "track": "ielts"}, "t-ielts-20261119": {"custom": false, "date": "2026-11-19", "detail": "Parts 1, 2 and 3, about 15 minutes. Record yourself, listen back and note three things to fix.", "done": false, "doneAt": "", "kind": "habit", "order": 59, "programme": "", "title": "IELTS mock test: Speaking", "track": "ielts"}, "t-ielts-20261120": {"custom": false, "date": "2026-11-20", "detail": "One full Listening test (30 minutes), then a recorded Speaking test (15 minutes).", "done": false, "doneAt": "", "kind": "habit", "order": 60, "programme": "", "title": "IELTS mock test: Listening and Speaking", "track": "ielts"}, "t-ielts-20261121": {"custom": false, "date": "2026-11-21", "detail": "Listening, Reading and Writing back to back (2 hours 40 minutes), then Speaking. Write down all four bands.", "done": false, "doneAt": "", "kind": "habit", "order": 55, "programme": "", "title": "IELTS mock test: Full test", "track": "ielts"}, "t-ielts-20261122": {"custom": false, "date": "2026-11-22", "detail": "Redo a mock of the section with your lowest band this week, then review the week's mistakes.", "done": false, "doneAt": "", "kind": "habit", "order": 56, "programme": "", "title": "IELTS mock test: Your weakest section", "track": "ielts"}, "t-ielts-20261123": {"custom": false, "date": "2026-11-23", "detail": "All 4 parts, 40 questions, 30 minutes, played once. Then mark it and note your band.", "done": false, "doneAt": "", "kind": "habit", "order": 57, "programme": "", "title": "IELTS mock test: Listening", "track": "ielts"}, "t-ielts-20261124": {"custom": false, "date": "2026-11-24", "detail": "All 3 passages, 40 questions, 60 minutes, no breaks. Then mark it and note your band.", "done": false, "doneAt": "", "kind": "habit", "order": 58, "programme": "", "title": "IELTS mock test: Reading", "track": "ielts"}, "t-ielts-20261125": {"custom": false, "date": "2026-11-25", "detail": "Task 1 in 20 minutes and Task 2 in 40 minutes, by the clock. Compare with a band 7 sample answer.", "done": false, "doneAt": "", "kind": "habit", "order": 59, "programme": "", "title": "IELTS mock test: Writing", "track": "ielts"}, "t-ielts-20261126": {"custom": false, "date": "2026-11-26", "detail": "Parts 1, 2 and 3, about 15 minutes. Record yourself, listen back and note three things to fix.", "done": false, "doneAt": "", "kind": "habit", "order": 60, "programme": "", "title": "IELTS mock test: Speaking", "track": "ielts"}, "t-ielts-20261127": {"custom": false, "date": "2026-11-27", "detail": "One full Listening test (30 minutes), then a recorded Speaking test (15 minutes).", "done": false, "doneAt": "", "kind": "habit", "order": 61, "programme": "", "title": "IELTS mock test: Listening and Speaking", "track": "ielts"}, "t-ielts-20261128": {"custom": false, "date": "2026-11-28", "detail": "Listening, Reading and Writing back to back (2 hours 40 minutes), then Speaking. Write down all four bands.", "done": false, "doneAt": "", "kind": "habit", "order": 62, "programme": "", "title": "IELTS mock test: Full test", "track": "ielts"}, "t-ielts-20261129": {"custom": false, "date": "2026-11-29", "detail": "Redo a mock of the section with your lowest band this week, then review the week's mistakes.", "done": false, "doneAt": "", "kind": "habit", "order": 63, "programme": "", "title": "IELTS mock test: Your weakest section", "track": "ielts"}, "t-ielts-20261130": {"custom": false, "date": "2026-11-30", "detail": "All 4 parts, 40 questions, 30 minutes, played once. Then mark it and note your band.", "done": false, "doneAt": "", "kind": "habit", "order": 64, "programme": "", "title": "IELTS mock test: Listening", "track": "ielts"}, "t-ielts-20261201": {"custom": false, "date": "2026-12-01", "detail": "All 3 passages, 40 questions, 60 minutes, no breaks. Then mark it and note your band.", "done": false, "doneAt": "", "kind": "habit", "order": 65, "programme": "", "title": "IELTS mock test: Reading", "track": "ielts"}, "t-ielts-20261202": {"custom": false, "date": "2026-12-02", "detail": "Task 1 in 20 minutes and Task 2 in 40 minutes, by the clock. Compare with a band 7 sample answer.", "done": false, "doneAt": "", "kind": "habit", "order": 66, "programme": "", "title": "IELTS mock test: Writing", "track": "ielts"}, "t-ielts-20261203": {"custom": false, "date": "2026-12-03", "detail": "Parts 1, 2 and 3, about 15 minutes. Record yourself, listen back and note three things to fix.", "done": false, "doneAt": "", "kind": "habit", "order": 67, "programme": "", "title": "IELTS mock test: Speaking", "track": "ielts"}, "t-ielts-20261204": {"custom": false, "date": "2026-12-04", "detail": "One full Listening test (30 minutes), then a recorded Speaking test (15 minutes).", "done": false, "doneAt": "", "kind": "habit", "order": 68, "programme": "", "title": "IELTS mock test: Listening and Speaking", "track": "ielts"}, "t-ielts-20261205": {"custom": false, "date": "2026-12-05", "detail": "Listening, Reading and Writing back to back (2 hours 40 minutes), then Speaking. Write down all four bands.", "done": false, "doneAt": "", "kind": "habit", "order": 69, "programme": "", "title": "IELTS mock test: Full test", "track": "ielts"}, "t-ielts-20261206": {"custom": false, "date": "2026-12-06", "detail": "Redo a mock of the section with your lowest band this week, then review the week's mistakes.", "done": false, "doneAt": "", "kind": "habit", "order": 70, "programme": "", "title": "IELTS mock test: Your weakest section", "track": "ielts"}, "t-ielts-20261207": {"custom": false, "date": "2026-12-07", "detail": "All 4 parts, 40 questions, 30 minutes, played once. Then mark it and note your band.", "done": false, "doneAt": "", "kind": "habit", "order": 71, "programme": "", "title": "IELTS mock test: Listening", "track": "ielts"}, "t-ielts-20261208": {"custom": false, "date": "2026-12-08", "detail": "All 3 passages, 40 questions, 60 minutes, no breaks. Then mark it and note your band.", "done": false, "doneAt": "", "kind": "habit", "order": 72, "programme": "", "title": "IELTS mock test: Reading", "track": "ielts"}, "t-ielts-20261209": {"custom": false, "date": "2026-12-09", "detail": "Task 1 in 20 minutes and Task 2 in 40 minutes, by the clock. Compare with a band 7 sample answer.", "done": false, "doneAt": "", "kind": "habit", "order": 73, "programme": "", "title": "IELTS mock test: Writing", "track": "ielts"}, "t-ielts-20261210": {"custom": false, "date": "2026-12-10", "detail": "Parts 1, 2 and 3, about 15 minutes. Record yourself, listen back and note three things to fix.", "done": false, "doneAt": "", "kind": "habit", "order": 74, "programme": "", "title": "IELTS mock test: Speaking", "track": "ielts"}, "t-ielts-20261211": {"custom": false, "date": "2026-12-11", "detail": "One full Listening test (30 minutes), then a recorded Speaking test (15 minutes).", "done": false, "doneAt": "", "kind": "habit", "order": 75, "programme": "", "title": "IELTS mock test: Listening and Speaking", "track": "ielts"}, "t-ielts-20261212": {"custom": false, "date": "2026-12-12", "detail": "Listening, Reading and Writing back to back (2 hours 40 minutes), then Speaking. Write down all four bands.", "done": false, "doneAt": "", "kind": "habit", "order": 76, "programme": "", "title": "IELTS mock test: Full test", "track": "ielts"}, "t-ielts-20261213": {"custom": false, "date": "2026-12-13", "detail": "Redo a mock of the section with your lowest band this week, then review the week's mistakes.", "done": false, "doneAt": "", "kind": "habit", "order": 77, "programme": "", "title": "IELTS mock test: Your weakest section", "track": "ielts"}, "t-ielts-20261214": {"custom": false, "date": "2026-12-14", "detail": "All 4 parts, 40 questions, 30 minutes, played once. Then mark it and note your band.", "done": false, "doneAt": "", "kind": "habit", "order": 78, "programme": "", "title": "IELTS mock test: Listening", "track": "ielts"}, "t-ielts-20261215": {"custom": false, "date": "2026-12-15", "detail": "All 3 passages, 40 questions, 60 minutes, no breaks. Then mark it and note your band.", "done": false, "doneAt": "", "kind": "habit", "order": 79, "programme": "", "title": "IELTS mock test: Reading", "track": "ielts"}, "t-ielts-20261216": {"custom": false, "date": "2026-12-16", "detail": "Task 1 in 20 minutes and Task 2 in 40 minutes, by the clock. Compare with a band 7 sample answer.", "done": false, "doneAt": "", "kind": "habit", "order": 80, "programme": "", "title": "IELTS mock test: Writing", "track": "ielts"}, "t-ielts-20261217": {"custom": false, "date": "2026-12-17", "detail": "Parts 1, 2 and 3, about 15 minutes. Record yourself, listen back and note three things to fix.", "done": false, "doneAt": "", "kind": "habit", "order": 81, "programme": "", "title": "IELTS mock test: Speaking", "track": "ielts"}, "t-ielts-20261218": {"custom": false, "date": "2026-12-18", "detail": "One full Listening test (30 minutes), then a recorded Speaking test (15 minutes).", "done": false, "doneAt": "", "kind": "habit", "order": 82, "programme": "", "title": "IELTS mock test: Listening and Speaking", "track": "ielts"}, "t-ielts-20261219": {"custom": false, "date": "2026-12-19", "detail": "Listening, Reading and Writing back to back (2 hours 40 minutes), then Speaking. Write down all four bands.", "done": false, "doneAt": "", "kind": "habit", "order": 83, "programme": "", "title": "IELTS mock test: Full test", "track": "ielts"}, "t-ielts-book": {"custom": false, "date": "2026-11-15", "detail": "Pick a date by mid-December so the result is ready before the January deadlines. Not IELTS Online: EDISS does not accept it.", "done": false, "doneAt": "", "kind": "task", "order": 2, "programme": "", "title": "Book IELTS Academic at a test centre", "track": "ielts"}, "t001": {"custom": false, "date": "2026-11-15", "detail": "It should come from the Registrar's Office, say your whole degree was taught only in English, and have a stamp, signature, letterhead and date. If anything is missing, ask AIUB for a new one.", "done": false, "doneAt": "", "kind": "task", "order": 1, "programme": "", "title": "Check your MOI certificate against the strict wording", "track": "none"}, "t003": {"custom": false, "date": "2026-11-16", "detail": "Mathematics and statistics courses first, then computer science. Use the exact course names.", "done": false, "doneAt": "", "kind": "task", "order": 3, "programme": "", "title": "Fill the course lists in your CV from your transcript", "track": "both"}, "t004": {"custom": false, "date": "2026-11-16", "detail": "The portal opens today. Note every field and document. Deadline 12 January 2027.", "done": false, "doneAt": "", "kind": "task", "order": 4, "programme": "EDISS", "title": "Open the EDISS application and list what it asks for", "track": "ielts"}, "t005": {"custom": false, "date": "2026-11-17", "detail": "Authors in order, title, venue, and 'submitted October 2026, under review'.", "done": false, "doneAt": "", "kind": "task", "order": 5, "programme": "", "title": "Add your two papers to the CV", "track": "both"}, "t006": {"custom": false, "date": "2026-11-17", "detail": "Use the Referee Information Sheet in your folder. The 'How you know me' part must differ for each referee.", "done": false, "doneAt": "", "kind": "task", "order": 6, "programme": "", "title": "Choose your two referees and fill one information sheet for each", "track": "both"}, "t007": {"custom": false, "date": "2026-11-18", "detail": "Attach your CV, transcript and the information sheet. Ask for the letter by 15 December.", "done": false, "doneAt": "", "kind": "task", "order": 7, "programme": "", "title": "Send the recommendation request emails", "track": "both"}, "t008": {"custom": false, "date": "2026-11-19", "detail": "The email text is in section 5 of your MOI Guide. Keep the replies.", "done": false, "doneAt": "", "kind": "task", "order": 8, "programme": "", "title": "Email DEAI, CoDaS and Pavia to ask if your MOI is accepted", "track": "both"}, "t009": {"custom": false, "date": "2026-11-20", "detail": "List each section's band from this week's mock tests and name your weakest section. Target: 6.5 overall, no band below 6.0.", "done": false, "doneAt": "", "kind": "task", "order": 9, "programme": "", "title": "Write down your IELTS mock bands so far", "track": "ielts"}, "t010": {"custom": false, "date": "2026-11-21", "detail": "Fill every yellow placeholder in the Core Draft and check each sentence is true.", "done": false, "doneAt": "", "kind": "task", "order": 10, "programme": "", "title": "Finish your general statement of purpose", "track": "both"}, "t011": {"custom": false, "date": "2026-11-22", "detail": "Plain light background, recent, saved as JPG.", "done": false, "doneAt": "", "kind": "task", "order": 11, "programme": "", "title": "Get a passport-style digital photo", "track": "both"}, "t012": {"custom": false, "date": "2026-11-22", "detail": "Optional, but it helps if you are near the top of your class.", "done": false, "doneAt": "", "kind": "task", "order": 12, "programme": "", "title": "Ask AIUB whether they issue a class rank letter", "track": "both"}, "t013": {"custom": false, "date": "2026-11-23", "detail": "From SSL Wireless, ThemeXpert and Advergo: your role, dates and main duties, on letterhead.", "done": false, "doneAt": "", "kind": "task", "order": 13, "programme": "", "title": "Request work experience letters", "track": "both"}, "t014": {"custom": false, "date": "2026-11-24", "detail": "Read the list of documents and choose your programmes. Deadline for the merit scholarship: 15 December.", "done": false, "doneAt": "", "kind": "task", "order": 14, "programme": "Politecnico di Milano", "title": "Create your Politecnico di Milano application account", "track": "none"}, "t015": {"custom": false, "date": "2026-11-25", "detail": "The portal opens today. Last year's scholarship window was 15 November to 20 December. Site: upf.edu/web/emai", "done": false, "doneAt": "", "kind": "task", "order": 15, "programme": "EMAI", "title": "Check the EMAI page for the scholarship deadline", "track": "ielts"}, "t016": {"custom": false, "date": "2026-11-26", "detail": "Look for the 2027/28 call and confirm Bangladesh is on the list. Site: stipendiumhungaricum.hu", "done": false, "doneAt": "", "kind": "task", "order": 16, "programme": "Stipendium Hungaricum", "title": "Check whether the Stipendium Hungaricum call is published", "track": "both"}, "t017": {"custom": false, "date": "2026-11-27", "detail": "MOI accepted in place of IELTS, the merit scholarship steps, and the 15 December noon deadline.", "done": false, "doneAt": "", "kind": "task", "order": 17, "programme": "Politecnico di Milano", "title": "Confirm the Politecnico di Milano rules on its own page", "track": "none"}, "t018": {"custom": false, "date": "2026-11-28", "detail": "Start from the Padova letter. Change the programme paragraph to the Milano courses you chose.", "done": false, "doneAt": "", "kind": "task", "order": 18, "programme": "Politecnico di Milano", "title": "Write your motivation text for Politecnico di Milano", "track": "none"}, "t019": {"custom": false, "date": "2026-11-29", "detail": "Erasmus Mundus programmes ask where you have lived. Check what EDISS and DEAI accept, then request it.", "done": false, "doneAt": "", "kind": "task", "order": 19, "programme": "", "title": "Find out what counts as proof of residence", "track": "ielts"}, "t020": {"custom": false, "date": "2026-11-30", "detail": "Passport, transcript, provisional certificate, MOI, SSC and HSC. One file each, readable, small size.", "done": false, "doneAt": "", "kind": "task", "order": 20, "programme": "", "title": "Scan every document as a clear PDF", "track": "both"}, "t021": {"custom": false, "date": "2026-12-01", "detail": "Call Two opens today. Your Padova letter and CV are in your folder. No English proof is needed to apply.", "done": false, "doneAt": "", "kind": "task", "order": 21, "programme": "Padova", "title": "Submit Padova Data Science in Call Two", "track": "none"}, "t022": {"custom": false, "date": "2026-12-01", "detail": "The portal opens today. Deadline 5 January 2027, documents by 12 January.", "done": false, "doneAt": "", "kind": "task", "order": 22, "programme": "CoDaS", "title": "Open the CoDaS application and list what it asks for", "track": "both"}, "t023": {"custom": false, "date": "2026-12-02", "detail": "Confirm the 22 December deadline and that a degree taught in English counts as B2.", "done": false, "doneAt": "", "kind": "task", "order": 23, "programme": "Milano-Bicocca", "title": "Check the Milano-Bicocca Data Science call for 2027/28", "track": "none"}, "t024": {"custom": false, "date": "2026-12-03", "detail": "Transcript, provisional certificate, MOI, CV and motivation text.", "done": false, "doneAt": "", "kind": "task", "order": 24, "programme": "Politecnico di Milano", "title": "Upload your documents to Politecnico di Milano", "track": "none"}, "t025": {"custom": false, "date": "2026-12-04", "detail": "Confirm the deadline and the MOI wording it wants. Its application cannot be changed after you submit.", "done": false, "doneAt": "", "kind": "task", "order": 25, "programme": "Politecnico di Torino", "title": "Check the Politecnico di Torino call", "track": "none"}, "t026": {"custom": false, "date": "2026-12-06", "detail": "Stress data engineering: Finkart, PostgreSQL, ingestion and retrieval pipelines.", "done": false, "doneAt": "", "kind": "task", "order": 26, "programme": "DEAI", "title": "Draft your DEAI statement", "track": "both"}, "t027": {"custom": false, "date": "2026-12-08", "detail": "The reminder email is in your Recommendation Request file. Letters are due 15 December.", "done": false, "doneAt": "", "kind": "task", "order": 27, "programme": "", "title": "Send the polite reminder to your referees", "track": "both"}, "t028": {"custom": false, "date": "2026-12-09", "detail": "If one is accepted, update the CV and tell your referees.", "done": false, "doneAt": "", "kind": "task", "order": 28, "programme": "", "title": "Check for decisions on your two papers", "track": "both"}, "t029": {"custom": false, "date": "2026-12-10", "detail": "Do not wait for the 15th. The deadline is noon in Italy, 5:00 pm in Dhaka.", "done": false, "doneAt": "", "kind": "task", "order": 29, "programme": "Politecnico di Milano", "title": "Submit Politecnico di Milano", "track": "none"}, "t030": {"custom": false, "date": "2026-12-12", "detail": "Create the account and upload your documents and MOI.", "done": false, "doneAt": "", "kind": "task", "order": 30, "programme": "Milano-Bicocca", "title": "Start the Milano-Bicocca application", "track": "none"}, "t031": {"custom": false, "date": "2026-12-13", "detail": "Stress software engineering for data-intensive systems: Advergo, deployment, pipelines.", "done": false, "doneAt": "", "kind": "task", "order": 31, "programme": "EDISS", "title": "Draft your EDISS statement", "track": "ielts"}, "t032": {"custom": false, "date": "2026-12-14", "detail": "Tampere opens today and closes 7 January; Aalto closes 5 January. Both need IELTS.", "done": false, "doneAt": "", "kind": "task", "order": 32, "programme": "Tampere", "title": "Decide whether to apply to Tampere and Aalto", "track": "ielts"}, "t033": {"custom": false, "date": "2026-12-15", "detail": "Today is the merit scholarship deadline: noon in Italy, 5:00 pm in Dhaka.", "done": false, "doneAt": "", "kind": "task", "order": 33, "programme": "Politecnico di Milano", "title": "Check Politecnico di Milano shows your application as complete", "track": "none"}, "t034": {"custom": false, "date": "2026-12-16", "detail": "Thank your referees. Tell them which programmes will email them an upload link.", "done": false, "doneAt": "", "kind": "task", "order": 34, "programme": "", "title": "Check both recommendation letters have arrived", "track": "both"}, "t035": {"custom": false, "date": "2026-12-18", "detail": "Deadline 22 December. Submit early.", "done": false, "doneAt": "", "kind": "task", "order": 35, "programme": "Milano-Bicocca", "title": "Submit Milano-Bicocca Data Science", "track": "none"}, "t036": {"custom": false, "date": "2026-12-19", "detail": "Only if you confirmed the deadline and MOI rule on 4 December.", "done": false, "doneAt": "", "kind": "task", "order": 36, "programme": "Politecnico di Torino", "title": "Submit Politecnico di Torino", "track": "none"}, "t037": {"custom": false, "date": "2026-12-20", "detail": "Check whether CoDaS also asks for a motivation video, and plan it if so.", "done": false, "doneAt": "", "kind": "task", "order": 37, "programme": "CoDaS", "title": "Draft your CoDaS statement", "track": "both"}, "t038": {"custom": false, "date": "2026-12-23", "detail": "Padova and Politecnico di Milano if they asked. Keep the PDF with your other scans.", "done": false, "doneAt": "", "kind": "task", "order": 38, "programme": "", "title": "Upload your IELTS result where it is waiting", "track": "ielts"}, "t039": {"custom": false, "date": "2026-12-26", "detail": "Upload documents and the statement. Leave only the final check.", "done": false, "doneAt": "", "kind": "task", "order": 39, "programme": "CoDaS", "title": "Fill the CoDaS application form", "track": "both"}, "t040": {"custom": false, "date": "2026-12-28", "detail": "Enter your referees' details so they receive the upload link. Letters are due 18 January.", "done": false, "doneAt": "", "kind": "task", "order": 40, "programme": "DEAI", "title": "Fill the DEAI application form", "track": "both"}, "t041": {"custom": false, "date": "2026-12-30", "detail": "Upload the two recommendation letters and your IELTS result.", "done": false, "doneAt": "", "kind": "task", "order": 41, "programme": "EDISS", "title": "Fill the EDISS application form", "track": "ielts"}, "t042": {"custom": false, "date": "2027-01-03", "detail": "Deadline 5 January 2027.", "done": false, "doneAt": "", "kind": "task", "order": 42, "programme": "CoDaS", "title": "Submit CoDaS", "track": "both"}, "t043": {"custom": false, "date": "2027-01-04", "detail": "Aalto closes 5 January, Tampere 7 January.", "done": false, "doneAt": "", "kind": "task", "order": 43, "programme": "Tampere", "title": "Submit Aalto and Tampere if you decided to apply", "track": "ielts"}, "t044": {"custom": false, "date": "2027-01-06", "detail": "Choose your programmes and upload documents. Expected deadline about 15 January.", "done": false, "doneAt": "", "kind": "task", "order": 44, "programme": "Stipendium Hungaricum", "title": "Work on Stipendium Hungaricum", "track": "both"}, "t045": {"custom": false, "date": "2027-01-08", "detail": "Deadline 11 January at noon GMT, 6:00 pm in Dhaka.", "done": false, "doneAt": "", "kind": "task", "order": 45, "programme": "DEAI", "title": "Submit DEAI", "track": "both"}, "t046": {"custom": false, "date": "2027-01-09", "detail": "Deadline 12 January at 3:00 pm in Helsinki, 7:00 pm in Dhaka.", "done": false, "doneAt": "", "kind": "task", "order": 46, "programme": "EDISS", "title": "Submit EDISS", "track": "ielts"}, "t047": {"custom": false, "date": "2027-01-10", "detail": "They are due 18 January through the link DEAI emailed them.", "done": false, "doneAt": "", "kind": "task", "order": 47, "programme": "DEAI", "title": "Remind your referees about the DEAI letters", "track": "both"}, "t048": {"custom": false, "date": "2027-01-12", "detail": "Open 12 to 20 January. Apply if Pavia confirmed your MOI or your IELTS is ready.", "done": false, "doneAt": "", "kind": "task", "order": 48, "programme": "Pavia", "title": "Apply to Pavia in the second call", "track": "none"}, "t049": {"custom": false, "date": "2027-01-13", "detail": "Expected deadline about 15 January. Check the real date in the call.", "done": false, "doneAt": "", "kind": "task", "order": 49, "programme": "Stipendium Hungaricum", "title": "Submit Stipendium Hungaricum", "track": "both"}, "t050": {"custom": false, "date": "2027-01-18", "detail": "Today is the deadline for the letters.", "done": false, "doneAt": "", "kind": "task", "order": 50, "programme": "DEAI", "title": "Check DEAI shows both reference letters received", "track": "both"}, "t051": {"custom": false, "date": "2027-02-01", "detail": "For the Science@Leuven scholarship. Needs IELTS 6.5.", "done": false, "doneAt": "", "kind": "task", "order": 51, "programme": "KU Leuven", "title": "Start the KU Leuven application", "track": "ielts"}, "t052": {"custom": false, "date": "2027-02-10", "detail": "Deadline 15 February 2027.", "done": false, "doneAt": "", "kind": "task", "order": 52, "programme": "KU Leuven", "title": "Submit KU Leuven and the Science@Leuven scholarship", "track": "ielts"}, "t053": {"custom": false, "date": "2027-02-20", "detail": "See which master's programmes are eligible and submit by 28 February.", "done": false, "doneAt": "", "kind": "task", "order": 53, "programme": "KU Leuven", "title": "Check the VLIR-UOS scholarship", "track": "ielts"}, "t054": {"custom": false, "date": "2027-02-25", "detail": "It closes 1 March 2027. Submit now if you have not.", "done": false, "doneAt": "", "kind": "task", "order": 54, "programme": "Padova", "title": "Last check on Padova Call Two", "track": "none"}}, "documents": {"card": {"group": "start", "name": "A bank card that works for international online payment", "note": "For application fees, for example Padova 60 euros and Pavia 35 euros.", "order": 11, "status": "todo"}, "cv": {"group": "start", "name": "Academic CV", "note": "Draft in your folder. Fill the course lists and paper titles.", "order": 7, "status": "progress"}, "degree": {"group": "funded", "name": "Final degree certificate", "note": "When AIUB issues it. Needed at enrolment, not to apply.", "order": 19, "status": "todo"}, "hsc": {"group": "start", "name": "HSC certificate", "note": "", "order": 5, "status": "have"}, "ielts": {"group": "funded", "name": "IELTS Academic result", "note": "Target 6.5 overall with no band below 6.0, taken at a test centre.", "order": 12, "status": "todo"}, "moi": {"group": "start", "name": "Medium of Instruction (MOI) certificate", "note": "Check the wording: Registrar-issued, whole degree taught only in English, stamp and signature.", "order": 4, "status": "have"}, "papers": {"group": "funded", "name": "Research paper details", "note": "Two papers submitted October 2026. Decisions expected in December.", "order": 18, "status": "progress"}, "passport": {"group": "start", "name": "Passport", "note": "Scan the photo page.", "order": 1, "status": "have"}, "photo": {"group": "start", "name": "Passport-style digital photo", "note": "", "order": 9, "status": "todo"}, "provisional": {"group": "start", "name": "Provisional degree certificate", "note": "Accepted at application stage. Check each programme.", "order": 3, "status": "have"}, "rank": {"group": "funded", "name": "Class rank letter", "note": "Optional. Ask AIUB whether they issue one.", "order": 17, "status": "todo"}, "rec1": {"group": "funded", "name": "Recommendation letter 1 (AIUB professor)", "note": "Request email and information sheet are in your folder.", "order": 13, "status": "todo"}, "rec2": {"group": "funded", "name": "Recommendation letter 2", "note": "A second professor, or your supervisor at SSL Wireless if the programme allows it.", "order": 14, "status": "todo"}, "residence": {"group": "funded", "name": "Proof of residence", "note": "Erasmus Mundus programmes ask for it. Check what each one accepts.", "order": 15, "status": "todo"}, "scans": {"group": "start", "name": "Clear PDF scans of every document", "note": "One file per document.", "order": 10, "status": "todo"}, "sop": {"group": "start", "name": "Statement of purpose / motivation letter", "note": "Core draft and Padova letter in your folder. Tailor it for each programme.", "order": 8, "status": "progress"}, "ssc": {"group": "start", "name": "SSC certificate", "note": "", "order": 6, "status": "have"}, "transcript": {"group": "start", "name": "Original academic transcript", "note": "", "order": 2, "status": "have"}, "work": {"group": "funded", "name": "Work experience letters", "note": "SSL Wireless, ThemeXpert and Advergo.", "order": 16, "status": "todo"}}, "programmes": {"aalto": {"confirm": "I could not read the country list. Check it.", "country": "Finland", "deadline": "2027-01-05", "english": "Language test needed. Degrees taught in English count only from listed countries.", "funding": "Tuition scholarships for non-EU students.", "group": "ielts", "name": "Aalto University", "opens": "", "order": 10, "status": "not_started", "url": "https://www.aalto.fi/en/study-at-aalto/applying-to-masters-programmes", "when": ""}, "bicocca": {"confirm": "Rule is from the 2026/27 call. The 2027/28 call was not published on 13 November.", "country": "Italy", "deadline": "2026-12-22", "english": "A bachelor's taught entirely in English counts as B2. Must be met by the deadline.", "funding": "Check the call for scholarships and fee reductions.", "group": "moi", "name": "Milano-Bicocca, MSc Data Science", "opens": "", "order": 2, "status": "not_started", "url": "https://university-of-milano-bicocca.dreamapply.com/en_GB/courses/course/75-data-science", "when": ""}, "bologna": {"confirm": "", "country": "Italy", "deadline": "", "english": "A language certificate is required. The page says MOI certificates are not admissible.", "funding": "Unibo Action grants, applied for separately in spring.", "group": "ielts", "name": "University of Bologna, MSc Artificial Intelligence", "opens": "", "order": 13, "status": "not_started", "url": "https://corsi.unibo.it/2cycle/artificial-intelligence/how-to-enrol", "when": "Dates for 2027/28 not published."}, "codas": {"confirm": "Email the programme to ask whether your MOI is accepted.", "country": "Portugal and partners", "deadline": "2027-01-05", "english": "The page asks for TOEFL or IELTS. No exemption found.", "funding": "Full Erasmus Mundus scholarship.", "group": "ask", "name": "Erasmus Mundus CoDaS", "opens": "2026-12-01", "order": 15, "status": "not_started", "url": "https://codas.tecnico.ulisboa.pt/?p=16", "when": "Documents by 12 January."}, "deai": {"confirm": "Email the programme to ask whether your MOI is accepted.", "country": "Belgium, Spain, Italy, France", "deadline": "2027-01-11", "english": "B2-level test; the site gives IELTS 5.5 as an example. MOI is not mentioned.", "funding": "Full Erasmus Mundus scholarship: tuition plus 1,400 euros a month.", "group": "ask", "name": "Erasmus Mundus DEAI (Data Engineering and AI)", "opens": "2026-10-20", "order": 14, "status": "not_started", "url": "https://deai.ulb.be/home/students/admission/", "when": "Noon GMT, 6:00 pm in Dhaka. Letters by 18 January."}, "ediss": {"confirm": "", "country": "Finland, Spain, Italy, Sweden", "deadline": "2027-01-12", "english": "IELTS Academic 6.5 with no band below 6.0. MOI from Bangladesh is not accepted.", "funding": "Full Erasmus Mundus scholarship: tuition plus 1,400 euros a month.", "group": "ielts", "name": "Erasmus Mundus EDISS", "opens": "2026-11-16", "order": 8, "status": "not_started", "url": "https://www.master-ediss.eu/", "when": "3:00 pm in Helsinki, 7:00 pm in Dhaka"}, "emai": {"confirm": "Check upf.edu/web/emai every few days.", "country": "Spain and partners", "deadline": "", "english": "IELTS Academic, TOEFL iBT or Cambridge only. Scores must be met when you apply.", "funding": "Full Erasmus Mundus scholarship.", "group": "ielts", "name": "Erasmus Mundus EMAI (Artificial Intelligence)", "opens": "2026-11-25", "order": 9, "status": "not_started", "url": "https://www.upf.edu/web/emai/access-admission", "when": "Scholarship deadline not announced. Last year: 20 December."}, "eth": {"confirm": "Long shot. A GRE may be required and the scholarship needs the top 10 percent of your class. Optional.", "country": "Switzerland", "deadline": "2026-11-30", "english": "MOI accepted only from the Registrar, stating the whole degree was taught only in English.", "funding": "Excellence Scholarship: CHF 13,500 a semester plus tuition waiver. About 60 awards.", "group": "moi", "name": "ETH Zurich, MSc Data Science or Computer Science", "opens": "", "order": 7, "status": "not_started", "url": "https://ethz.ch/en/studies/registration-application/master/application/how-to-apply/application-schedule.html", "when": "11:59 am in Zurich, 4:59 pm in Dhaka"}, "kuleuven": {"confirm": "", "country": "Belgium", "deadline": "2027-02-15", "english": "IELTS 6.5. MOI from Bangladesh is not accepted.", "funding": "Science@Leuven scholarship. VLIR-UOS scholarship closes 28 February.", "group": "ielts", "name": "KU Leuven, Science@Leuven scholarship", "opens": "", "order": 12, "status": "not_started", "url": "https://www.kuleuven.be/english/apply/language-requirements", "when": ""}, "padova": {"confirm": "", "country": "Italy", "deadline": "2027-03-01", "english": "MOI is not accepted, but you can apply with no English proof. IELTS 6.0 is due by 31 July 2027.", "funding": "8,000 euros a year plus fee waiver, but mainly given in Call One. Small chance in Call Two.", "group": "moi", "name": "University of Padova, MSc Data Science (Call Two)", "opens": "2026-12-01", "order": 4, "status": "not_started", "url": "https://apply.unipd.it/courses/course/33-data-science", "when": ""}, "pavia": {"confirm": "Ask the admissions office to confirm your MOI before paying the 35 euro fee.", "country": "Italy", "deadline": "2027-01-20", "english": "MOI usually accepted, not guaranteed. Otherwise IELTS 5.5.", "funding": "No full scholarship found. Income-based regional grant in summer.", "group": "moi", "name": "University of Pavia, MSc Computer Engineering (second call)", "opens": "2027-01-12", "order": 5, "status": "not_started", "url": "https://apply.unipv.eu/en_GB/courses/course/34-masters-degree-computer-engineering", "when": ""}, "polimi": {"confirm": "The page does not name the 2027/28 year. Check it.", "country": "Italy", "deadline": "2026-12-15", "english": "MOI accepted. English proof is not needed to submit, but it is needed for the scholarship and admission letter.", "funding": "Merit scholarship: decided with your application.", "group": "moi", "name": "Politecnico di Milano", "opens": "", "order": 1, "status": "not_started", "url": "https://www.polimi.it/en/prospective-students/how-to-apply/admission-to-laurea-magistrale/foreign-qualification/requirements", "when": "Noon in Italy, 5:00 pm in Dhaka"}, "polito": {"confirm": "The deadline comes from one listing site. Check it on polito.it.", "country": "Italy", "deadline": "2026-12-22", "english": "MOI accepted. Bangladesh is named in its list of countries.", "funding": "TOPoliTO scholarship, about 8,000 euros a year, for admitted students.", "group": "moi", "name": "Politecnico di Torino", "opens": "", "order": 3, "status": "not_started", "url": "https://www.polito.it/en/education/applying-studying-graduating/admissions-and-enrolment/master-s-degree-programmes/applicants-with-a-non-italian-qualification", "when": ""}, "sh": {"confirm": "Check the call is published and that Bangladesh is eligible.", "country": "Hungary", "deadline": "2027-01-15", "english": "Each university sets its own rule. Many accept an MOI.", "funding": "Full scholarship: tuition, monthly stipend, housing support.", "group": "ask", "name": "Stipendium Hungaricum", "opens": "", "order": 16, "status": "not_started", "url": "https://stipendiumhungaricum.hu/apply/", "when": "Expected date. The call was not published on 10 November."}, "tampere": {"confirm": "I could not read the country list. Check it.", "country": "Finland", "deadline": "2027-01-07", "english": "Language test needed. Degrees taught in English count only from listed countries.", "funding": "Tuition scholarships for non-EU students.", "group": "ielts", "name": "Tampere University", "opens": "2026-12-14", "order": 11, "status": "not_started", "url": "https://www.tuni.fi/en/study-with-us/how-to-apply/applying-to-tampere-university-masters-programmes", "when": ""}, "trento": {"confirm": "Rule is from earlier years. Watch corsi.unitn.it for the 2027/28 call.", "country": "Italy", "deadline": "", "english": "A university statement that English is the teaching language is accepted.", "funding": "Scholarships for top-ranked non-EU applicants.", "group": "moi", "name": "University of Trento, Data Science or AI Systems", "opens": "", "order": 6, "status": "not_started", "url": "https://international.unitn.it/node/5848", "when": "Dates not published. Last year: mid-December to early March."}}}}, COLS = ["tasks", "documents", "programmes", "settings"];
+  var KEEP = { tasks: ["done", "doneAt"], documents: ["status"], programmes: ["status"], settings: ["ieltsDate", "ieltsScore"] };
+  function clone(o) { return JSON.parse(JSON.stringify(o)); }
+  function valid(o) { return !!o && COLS.every(function (c) { return o[c] && typeof o[c] === "object" && !Array.isArray(o[c]); }); }
+  /* A newer plan arrived with this file: keep the user's ticks, statuses and own tasks, take the rest from the plan. */
+  function merge(old) {
+    var out = clone(SEED.store);
+    COLS.forEach(function (c) {
+      Object.keys(old[c]).forEach(function (id) {
+        var o = old[c][id]; if (!o || typeof o !== "object") return;
+        if (!out[c][id]) { if (c === "tasks" && o.custom) out[c][id] = o; return; }
+        KEEP[c].forEach(function (k) { if (k in o) out[c][id][k] = o[k]; });
+      });
+    });
+    return out;
+  }
+  var store = null, persistent = true, subs = [];
+  function save() { try { localStorage.setItem(KEY, JSON.stringify({ seed: SEED.seed, store: store })); persistent = true; } catch (e) { persistent = false; } return persistent; }
+  function load() {
+    try {
+      var o = JSON.parse(localStorage.getItem(KEY) || "null");
+      if (o && valid(o.store)) return (o.seed | 0) < SEED.seed ? merge(o.store) : o.store;
+    } catch (e) {}
+    return null;
+  }
+  store = load() || clone(SEED.store);
+  save();
+  function fire() { subs.forEach(function (f) { setTimeout(f, 0); }); }
+  function snapDoc(c, id) { var b = store[c] && store[c][id]; return { id: id, exists: !!b, data: function () { return b ? clone(b) : undefined; } }; }
+  function snapCol(c) { var docs = Object.keys(store[c] || {}).sort().map(function (id) { return snapDoc(c, id); }); return { docs: docs, size: docs.length, empty: !docs.length }; }
+  function docRef(c, id) {
+    return {
+      id: id, path: c + "/" + id,
+      get: function () { return Promise.resolve(snapDoc(c, id)); },
+      set: function (d) { store[c] = store[c] || {}; store[c][id] = clone(d); save(); fire(); return Promise.resolve(); },
+      update: function (d) {
+        if (!store[c] || !store[c][id]) return Promise.reject({ code: "not_found" });
+        var n = clone(store[c][id]); for (var k in d) n[k] = d[k];
+        store[c][id] = n; save(); fire(); return Promise.resolve();
+      },
+      delete: function () { if (store[c]) delete store[c][id]; save(); fire(); return Promise.resolve(); },
+      onSnapshot: function (next) { var f = function () { next(snapDoc(c, id)); }; subs.push(f); setTimeout(f, 0); return function () {}; }
+    };
+  }
+  var db = {
+    doc: function (p) { var s = p.split("/"); return docRef(s[0], s[1]); },
+    collection: function (c) {
+      return {
+        path: c,
+        doc: function (id) { return docRef(c, id || ("c" + Date.now().toString(36) + Math.random().toString(36).slice(2, 7))); },
+        onSnapshot: function (next) { var f = function () { next(snapCol(c)); }; subs.push(f); setTimeout(f, 0); return function () {}; }
+      };
+    }
+  };
+  function parse(text) { try { var b = JSON.parse(text); return b && b.app === "scholarship-tracker" && valid(b.store) ? b : null; } catch (e) { return null; } }
+  window.__local = {
+    persistent: function () { return persistent; },
+    exportText: function () { return JSON.stringify({ app: "scholarship-tracker", format: 1, savedAt: new Date().toISOString(), seed: SEED.seed, store: store }, null, 1); },
+    check: function (text) {
+      var b = parse(text); if (!b) return null;
+      var real = Object.keys(b.store.tasks).map(function (k) { return b.store.tasks[k]; }).filter(function (t) { return t && t.kind !== "habit"; });
+      return { savedAt: typeof b.savedAt === "string" ? b.savedAt : "", total: real.length, done: real.filter(function (t) { return t.done; }).length };
+    },
+    importText: function (text) {
+      var b = parse(text); if (!b) return false;
+      store = (b.seed | 0) < SEED.seed ? merge(b.store) : b.store; save(); fire(); return true;
+    }
+  };
+  /* another tab of this file changed the data */
+  window.addEventListener("storage", function (ev) { if (ev.key === KEY) { var s = load(); if (s) { store = s; fire(); } } });
+  window.claude = { use: function (n) { return Promise.resolve(n === "db" ? db : null); } };
+})();
+</script>
+<style>
+/* Layout: one column of dated work on a phone; the work list plus a deadline rail on a laptop. */
+:root {
+  --bg: #F2F5F6; --surface: #FFFFFF; --ink: #14232A; --muted: #55676F; --line: #D7E0E3;
+  --accent: #0B6B66; --accent-ink: #FFFFFF; --accent-soft: #DDEFEE;
+  --good: #1B7A4C; --good-bg: #E1F2E8; --warn: #8A5A00; --warn-bg: #FFEFD0; --crit: #B3261E; --crit-bg: #FBE3E1;
+  --display: "Space Grotesk", "Inter", system-ui, sans-serif;
+  --body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0E1618; --surface: #162226; --ink: #E5EDEF; --muted: #9BABB2; --line: #2B3A3F;
+    --accent: #5CC8C0; --accent-ink: #062321; --accent-soft: #173A39;
+    --good: #72D09A; --good-bg: #153424; --warn: #F2B95F; --warn-bg: #3A2C0E; --crit: #F5928A; --crit-bg: #41201D;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0E1618; --surface: #162226; --ink: #E5EDEF; --muted: #9BABB2; --line: #2B3A3F;
+  --accent: #5CC8C0; --accent-ink: #062321; --accent-soft: #173A39;
+  --good: #72D09A; --good-bg: #153424; --warn: #F2B95F; --warn-bg: #3A2C0E; --crit: #F5928A; --crit-bg: #41201D;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 15px; line-height: 1.45; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+.wrap { max-width: 980px; margin: 0 auto; padding-block: 18px 48px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3 { font-family: var(--display); margin: 0; text-wrap: balance; }
+h1 { font-size: 24px; font-weight: 700; letter-spacing: -0.01em; }
+h2 { font-size: 17px; font-weight: 700; }
+h3 { font-size: 15px; font-weight: 500; }
+p { margin: 0; }
+.top { display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: baseline; justify-content: space-between; }
+.dateline { color: var(--muted); }
+.sync { color: var(--muted); font-size: 13px; min-height: 1.4em; }
+.sync.bad { color: var(--crit); }
+
+.tabs { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); display: flex; gap: 4px;
+  margin-top: 12px; padding-block: 8px; border-bottom: 1px solid var(--line); overflow-x: auto; }
+.tabs a { flex: 1 0 auto; text-align: center; padding: 8px 6px; border-radius: 8px; color: var(--muted); text-decoration: none; font-weight: 500; }
+.tabs a[aria-current="page"] { background: var(--accent); color: var(--accent-ink); }
+.tabs a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.view { display: flex; flex-direction: column; gap: 22px; margin-top: 20px; }
+.cols { display: grid; gap: 22px; grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 820px) { .cols { grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); align-items: start; } }
+.stack { display: flex; flex-direction: column; gap: 22px; min-width: 0; }
+.sec { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.sec-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; }
+.count { color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; }
+.daylabel { color: var(--muted); font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; margin-top: 6px; }
+
+.list { list-style: none; margin: 0; padding: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
+.list > li { display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; border-top: 1px solid var(--line); min-width: 0; }
+.list > li:first-child { border-top: 0; }
+.list input[type="checkbox"] { flex: 0 0 auto; width: 22px; height: 22px; margin: 1px 0 0; accent-color: var(--accent); }
+.row-main { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 3px; }
+.row-title { font-weight: 600; overflow-wrap: anywhere; }
+.row-detail { color: var(--muted); font-size: 14px; overflow-wrap: anywhere; }
+li.done .row-title { text-decoration: line-through; color: var(--muted); font-weight: 500; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 3px; }
+.chip { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 12px; font-weight: 500; background: var(--bg); color: var(--muted); border: 1px solid var(--line); font-variant-numeric: tabular-nums; white-space: nowrap; flex: 0 0 auto; }
+.chip.good { background: var(--good-bg); color: var(--good); border-color: transparent; }
+.chip.warn { background: var(--warn-bg); color: var(--warn); border-color: transparent; }
+.chip.crit { background: var(--crit-bg); color: var(--crit); border-color: transparent; }
+.chip.accent { background: var(--accent-soft); color: var(--accent); border-color: transparent; }
+
+.note { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px; color: var(--muted); }
+.note strong { color: var(--ink); }
+.alert { background: var(--warn-bg); color: var(--warn); border-radius: 10px; padding: 12px 14px; font-weight: 500; }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.dl { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.dl li { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; min-width: 0; }
+.dl .dl-name { min-width: 0; overflow-wrap: anywhere; }
+.dl .dl-date { color: var(--muted); font-size: 13px; display: block; }
+
+form { display: flex; flex-direction: column; gap: 8px; }
+.field { display: flex; flex-direction: column; gap: 3px; font-size: 13px; color: var(--muted); min-width: 0; }
+.fields { display: flex; flex-wrap: wrap; gap: 8px; }
+.fields .field { flex: 1 1 130px; }
+input[type="text"], input[type="date"], select { font: inherit; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; min-width: 0; width: 100%; }
+button { font: inherit; font-weight: 600; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); padding: 8px 12px; cursor: pointer; }
+button.primary { background: var(--accent); color: var(--accent-ink); border-color: transparent; align-self: flex-start; }
+button.small { padding: 3px 9px; font-size: 13px; font-weight: 500; flex: 0 0 auto; }
+button:disabled, select:disabled, input:disabled { opacity: 0.55; cursor: default; }
+.filters { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.filters button[aria-pressed="true"] { background: var(--accent-soft); color: var(--accent); border-color: transparent; }
+.toggle { display: inline-flex; gap: 6px; align-items: center; color: var(--muted); font-size: 14px; }
+.toggle input { width: 18px; height: 18px; accent-color: var(--accent); }
+
+.cards { display: grid; gap: 12px; grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 720px) { .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.card-head { display: flex; flex-wrap: wrap; gap: 4px 10px; justify-content: space-between; align-items: baseline; }
+.card-head h3 { font-weight: 700; min-width: 0; overflow-wrap: anywhere; }
+.kv { display: grid; grid-template-columns: 78px minmax(0, 1fr); gap: 4px 10px; font-size: 14px; margin: 0; }
+.kv dt { color: var(--muted); }
+.kv dd { margin: 0; overflow-wrap: anywhere; }
+.confirm { background: var(--warn-bg); color: var(--warn); border-radius: 8px; padding: 6px 10px; font-size: 13px; }
+.ext { color: var(--accent); font-weight: 600; overflow-wrap: anywhere; }
+.status-sel { max-width: 170px; }
+.docrow select { flex: 0 0 132px; width: 132px; }
+.toast { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); background: var(--ink); color: var(--bg); padding: 10px 14px; border-radius: 8px; max-width: calc(100% - 32px); z-index: 20; }
+@media (prefers-reduced-motion: no-preference) { .list > li, .card { transition: background-color .15s; } }
+label.btnlike { font-weight: 600; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); padding: 8px 12px; cursor: pointer; position: relative; }
+label.btnlike:focus-within { outline: 2px solid var(--accent); outline-offset: 2px; }
+.vh { position: absolute; width: 1px; height: 1px; opacity: 0; overflow: hidden; }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>Scholarship Tracker</h1>
+      <p class="dateline" id="dateline"></p>
+    </div>
+    <p class="sync" id="sync" role="status"></p>
+  </header>
+  <nav class="tabs" aria-label="Sections">
+    <a href="#today" data-view="today">Today</a>
+    <a href="#plan" data-view="plan">Plan</a>
+    <a href="#documents" data-view="documents">Documents</a>
+    <a href="#programmes" data-view="programmes">Programmes</a>
+  </nav>
+  <main class="view" id="view"></main>
+</div>
+<div class="toast" id="toast" role="alert" hidden></div>
+
+<script>
+(function () {
+  "use strict";
+  var VIEWS = ["today", "plan", "documents", "programmes"];
+  var TRACK = { none: "No IELTS needed", ielts: "Needs IELTS", both: "Both tracks" };
+  var DOC_GROUPS = [
+    ["start", "To start applying now, without IELTS"],
+    ["funded", "For the fully funded programmes (these also need IELTS)"]
+  ];
+  var PROG_GROUPS = [
+    ["moi", "Apply now, without IELTS", "Your MOI certificate is accepted, or no English proof is needed to apply."],
+    ["ielts", "Needs IELTS", "Your MOI is not accepted. Book and take IELTS first."],
+    ["ask", "Not confirmed: ask first", "The rule for an MOI is not stated. Email the programme before you rely on it."]
+  ];
+  var DOC_STATUS = [["have", "Have it"], ["progress", "In progress"], ["todo", "To do"]];
+  var PROG_STATUS = [["not_started", "Not started"], ["in_progress", "In progress"], ["submitted", "Submitted"], ["skipped", "Not applying"]];
+
+  var S = {
+    db: null, ready: { tasks: false, documents: false, programmes: false }, slow: false, dead: false, readOnly: false,
+    tasks: [], documents: [], programmes: [], settings: { ieltsDate: "", ieltsScore: "" },
+    busy: {}, pendingDelete: "",
+    ui: { filter: "all", habits: false, hideDone: false },
+    draft: { title: "", date: "", ieltsDate: null, ieltsScore: null }
+  };
+  try { var saved = JSON.parse(localStorage.getItem("st-ui") || "null"); if (saved) { S.ui.filter = saved.filter || "all"; S.ui.habits = !!saved.habits; S.ui.hideDone = !!saved.hideDone; } } catch (e) {}
+  function saveUi() { try { localStorage.setItem("st-ui", JSON.stringify(S.ui)); } catch (e) {} }
+
+  var $view = document.getElementById("view"), $sync = document.getElementById("sync"), $toast = document.getElementById("toast");
+
+  /* ---------- dates (all in Dhaka time) ---------- */
+  function today() {
+    try { return new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Dhaka", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date()); }
+    catch (e) { return new Date(Date.now() + 6 * 3600e3).toISOString().slice(0, 10); }
+  }
+  function toUtc(d) { var p = d.split("-"); return Date.UTC(+p[0], +p[1] - 1, +p[2]); }
+  function diff(a, b) { return Math.round((toUtc(a) - toUtc(b)) / 86400e3); }
+  function addDays(d, n) { return new Date(toUtc(d) + n * 86400e3).toISOString().slice(0, 10); }
+  function fmt(d, long) {
+    if (!d) return "";
+    var o = { timeZone: "UTC", weekday: "short", day: "numeric", month: "short" };
+    if (long || d.slice(0, 4) !== today().slice(0, 4)) o.year = "numeric";
+    return new Intl.DateTimeFormat("en-GB", o).format(new Date(toUtc(d)));
+  }
+  function monday(d) { var w = new Date(toUtc(d)).getUTCDay(); return addDays(d, -((w + 6) % 7)); }
+  function daysLeft(d) {
+    var n = diff(d, today());
+    if (n < 0) return ["Closed", ""];
+    if (n === 0) return ["Today", "crit"];
+    if (n === 1) return ["Tomorrow", "crit"];
+    return [n + " days left", n <= 7 ? "crit" : n <= 21 ? "warn" : ""];
+  }
+
+  /* ---------- helpers ---------- */
+  function esc(s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
+  function chip(text, cls) { return '<span class="chip' + (cls ? " " + cls : "") + '">' + esc(text) + "</span>"; }
+  function plural(n, w) { return n + " " + w + (n === 1 ? "" : "s"); }
+  function byOrder(a, b) { return (a.order || 0) - (b.order || 0); }
+  function byDate(a, b) { return a.date < b.date ? -1 : a.date > b.date ? 1 : byOrder(a, b); }
+  function options(list, value) { return list.map(function (o) { return '<option value="' + o[0] + '"' + (o[0] === value ? " selected" : "") + ">" + esc(o[1]) + "</option>"; }).join(""); }
+  function dis() { return S.readOnly || !S.db ? " disabled" : ""; }
+  var toastTimer = 0;
+  function toast(msg) { $toast.textContent = msg; $toast.hidden = false; clearTimeout(toastTimer); toastTimer = setTimeout(function () { $toast.hidden = true; }, 4000); }
+  function currentView() { var h = (location.hash || "").replace("#", ""); return VIEWS.indexOf(h) >= 0 ? h : "today"; }
+  function allReady() { return S.ready.tasks && S.ready.documents && S.ready.programmes; }
+
+  /* ---------- rows ---------- */
+  function taskRow(t, showDate) {
+    var td = today(), chips = "";
+    if (showDate) chips += chip(fmt(t.date), !t.done && t.date < td ? "crit" : "");
+    if (t.kind !== "habit") chips += chip(TRACK[t.track] || TRACK.both, t.track === "none" ? "good" : t.track === "ielts" ? "accent" : "");
+    if (t.programme) chips += chip(t.programme);
+    if (t.custom) chips += chip("Added by you");
+    var del = "";
+    if (t.custom) del = '<button type="button" class="small" data-act="del-task" data-id="' + esc(t.id) + '"' + dis() + ">" + (S.pendingDelete === t.id ? "Tap again to remove" : "Remove") + "</button>";
+    return '<li class="' + (t.done ? "done" : "") + '"><input type="checkbox" id="chk-' + esc(t.id) + '" data-act="toggle" data-id="' + esc(t.id) + '"' + (t.done ? " checked" : "") + (S.busy["tasks/" + t.id] ? " disabled" : dis()) + ">" +
+      '<label class="row-main" for="chk-' + esc(t.id) + '"><span class="row-title">' + esc(t.title) + "</span>" +
+      (t.detail ? '<span class="row-detail">' + esc(t.detail) + "</span>" : "") + '<span class="chips">' + chips + "</span></label>" + del + "</li>";
+  }
+  function listOf(tasks, showDate) { return '<ul class="list">' + tasks.map(function (t) { return taskRow(t, showDate); }).join("") + "</ul>"; }
+  function section(title, count, body) { return '<section class="sec"><div class="sec-head"><h2>' + esc(title) + "</h2>" + (count !== "" ? '<span class="count">' + esc(count) + "</span>" : "") + "</div>" + body + "</section>"; }
+
+  /* ---------- views ---------- */
+  function viewToday() {
+    var td = today(), week = addDays(td, 7);
+    var overdue = S.tasks.filter(function (t) { return !t.done && t.date < td && t.kind !== "habit"; }).sort(byDate);
+    var now = S.tasks.filter(function (t) { return t.date === td; }).sort(byOrder);
+    var next = S.tasks.filter(function (t) { return !t.done && t.date > td && t.date <= week && t.kind !== "habit"; }).sort(byDate);
+    var left = "";
+    var booked = S.settings.ieltsDate || S.tasks.some(function (t) { return t.id === "t-ielts-book" && t.done; });
+    if (!booked) left += '<p class="alert">IELTS is not booked yet. EDISS and most fully funded programmes need the result by early January.</p>';
+    if (overdue.length) left += section("Overdue", overdue.length + " to catch up", listOf(overdue, true));
+    left += section("Today", now.length ? now.filter(function (t) { return t.done; }).length + " of " + now.length + " done" : "",
+      now.length ? listOf(now, false) : '<p class="note">Nothing is planned for today. Use the time for an overdue task, or rest.</p>');
+    if (next.length) {
+      var body = "", last = "";
+      next.forEach(function (t, i) {
+        if (t.date !== last) { if (last) body += "</ul>"; body += '<p class="daylabel">' + esc(fmt(t.date)) + '</p><ul class="list">'; last = t.date; }
+        body += taskRow(t, false);
+        if (i === next.length - 1) body += "</ul>";
+      });
+      left += section("Next 7 days", plural(next.length, "task"), body);
+    }
+
+    var dls = S.programmes.filter(function (p) { return p.deadline && p.deadline >= td && p.status !== "submitted" && p.status !== "skipped"; })
+      .sort(function (a, b) { return a.deadline < b.deadline ? -1 : a.deadline > b.deadline ? 1 : byOrder(a, b); }).slice(0, 5);
+    var rail = '<section class="panel"><h2>Next deadlines</h2>' + (dls.length ? '<ul class="dl">' + dls.map(function (p) {
+      var dl = daysLeft(p.deadline);
+      return '<li><span class="dl-name">' + esc(p.name) + '<span class="dl-date">' + esc(fmt(p.deadline, true)) + (p.when ? ". " + esc(p.when) : "") + "</span></span>" + chip(dl[0], dl[1]) + "</li>";
+    }).join("") + "</ul>" : '<p class="row-detail">No open deadlines.</p>') + "</section>";
+
+    var iDate = S.draft.ieltsDate != null ? S.draft.ieltsDate : S.settings.ieltsDate || "";
+    var iScore = S.draft.ieltsScore != null ? S.draft.ieltsScore : S.settings.ieltsScore || "";
+    var iNote = S.settings.ieltsDate ? (diff(S.settings.ieltsDate, td) >= 0 ? "Test in " + diff(S.settings.ieltsDate, td) + " days." : "Test date has passed. Add your score when it arrives.") : "Target: 6.5 overall, no band below 6.0.";
+    rail += '<section class="panel"><h2>IELTS</h2><p class="row-detail">' + esc(iNote) + '</p><form data-form="ielts"><div class="fields">' +
+      '<label class="field">Test date<input type="date" id="ielts-date" data-draft="ieltsDate" value="' + esc(iDate) + '"' + dis() + "></label>" +
+      '<label class="field">Overall score<input type="text" id="ielts-score" data-draft="ieltsScore" inputmode="decimal" placeholder="e.g. 7.0" value="' + esc(iScore) + '"' + dis() + "></label>" +
+      '</div><button class="primary" type="submit"' + dis() + ">Save IELTS details</button></form></section>";
+
+    rail += '<section class="panel"><h2>Add your own task</h2><form data-form="add"><label class="field">What to do<input type="text" id="add-title" data-draft="title" maxlength="140" value="' + esc(S.draft.title) + '"' + dis() + "></label>" +
+      '<label class="field">On which day<input type="date" id="add-date" data-draft="date" value="' + esc(S.draft.date || td) + '"' + dis() + "></label>" +
+      '<button class="primary" type="submit"' + dis() + ">Add task</button></form></section>";
+
+    rail += backupPanel();
+    return '<div class="cols"><div class="stack">' + left + '</div><div class="stack">' + rail + "</div></div>";
+  }
+
+  function viewPlan() {
+    var f = S.ui.filter;
+    var list = S.tasks.filter(function (t) {
+      if (t.kind === "habit" && !S.ui.habits) return false;
+      if (S.ui.hideDone && t.done) return false;
+      if (f === "none") return t.track === "none" || t.track === "both";
+      if (f === "ielts") return t.track === "ielts" || t.track === "both";
+      return true;
+    }).sort(byDate);
+    var real = S.tasks.filter(function (t) { return t.kind !== "habit"; });
+    var html = '<section class="sec"><div class="sec-head"><h2>Whole plan</h2><span class="count">' + real.filter(function (t) { return t.done; }).length + " of " + real.length + " tasks done</span></div>" +
+      '<div class="filters">' + [["all", "All"], ["none", "No IELTS needed"], ["ielts", "Needs IELTS"]].map(function (o) {
+        return '<button type="button" data-act="filter" data-id="' + o[0] + '" aria-pressed="' + (f === o[0]) + '">' + o[1] + "</button>";
+      }).join("") +
+      '<label class="toggle"><input type="checkbox" id="tg-habits" data-act="tg-habits"' + (S.ui.habits ? " checked" : "") + ">Show daily IELTS mock tests</label>" +
+      '<label class="toggle"><input type="checkbox" id="tg-done" data-act="tg-done"' + (S.ui.hideDone ? " checked" : "") + ">Hide done</label></div></section>";
+    if (!list.length) return html + '<p class="note">No tasks match this filter.</p>';
+    var weeks = {}, order = [];
+    list.forEach(function (t) { var m = monday(t.date); if (!weeks[m]) { weeks[m] = []; order.push(m); } weeks[m].push(t); });
+    var thisWeek = monday(today());
+    order.forEach(function (m) {
+      html += section(m === thisWeek ? "This week" : "Week of " + fmt(m, true).replace(/^\w+,? /, ""), plural(weeks[m].length, "task"), listOf(weeks[m], true));
+    });
+    return html;
+  }
+
+  function viewDocuments() {
+    var have = S.documents.filter(function (d) { return d.status === "have"; }).length;
+    var html = '<p class="note"><strong>' + have + " of " + S.documents.length + " collected.</strong> Change a status when you get a document. The first group is enough to apply where your MOI is accepted.</p>";
+    DOC_GROUPS.forEach(function (g) {
+      var docs = S.documents.filter(function (d) { return d.group === g[0]; }).sort(byOrder);
+      if (!docs.length) return;
+      html += section(g[1], docs.filter(function (d) { return d.status === "have"; }).length + " of " + docs.length, '<ul class="list">' + docs.map(function (d) {
+        var c = d.status === "have" ? chip("Have it ✓", "good") : d.status === "progress" ? chip("In progress", "warn") : chip("To do");
+        return '<li class="docrow"><span class="row-main"><span class="row-title">' + esc(d.name) + "</span>" + (d.note ? '<span class="row-detail">' + esc(d.note) + "</span>" : "") + '<span class="chips">' + c + "</span></span>" +
+          '<select id="doc-' + esc(d.id) + '" data-act="doc-status" data-id="' + esc(d.id) + '" aria-label="Status of ' + esc(d.name) + '"' + (S.busy["documents/" + d.id] ? " disabled" : dis()) + ">" + options(DOC_STATUS, d.status) + "</select></li>";
+      }).join("") + "</ul>");
+    });
+    return html;
+  }
+
+  function viewProgrammes() {
+    var html = "";
+    PROG_GROUPS.forEach(function (g) {
+      var ps = S.programmes.filter(function (p) { return p.group === g[0]; }).sort(function (a, b) {
+        var x = a.deadline || "9999", y = b.deadline || "9999"; return x < y ? -1 : x > y ? 1 : byOrder(a, b);
+      });
+      if (!ps.length) return;
+      html += section(g[1], plural(ps.length, "programme"), '<p class="row-detail">' + esc(g[2]) + '</p><div class="cards">' + ps.map(function (p) {
+        var dl = p.deadline ? daysLeft(p.deadline) : ["No date yet", "warn"];
+        if (p.status === "submitted") dl = ["Submitted ✓", "good"];
+        if (p.status === "skipped") dl = ["Not applying", ""];
+        var opens = p.opens ? (p.opens > today() ? "Opens " + fmt(p.opens, true) : "Open now") : "";
+        return '<article class="card"><div class="card-head"><h3>' + esc(p.name) + "</h3>" + chip(dl[0], dl[1]) + '</div><dl class="kv">' +
+          "<dt>Deadline</dt><dd>" + esc(p.deadline ? fmt(p.deadline, true) : "Not published") + (p.when ? ". " + esc(p.when) : "") + "</dd>" +
+          (opens ? "<dt>Portal</dt><dd>" + esc(opens) + "</dd>" : "") +
+          "<dt>Where</dt><dd>" + esc(p.country) + "</dd><dt>English</dt><dd>" + esc(p.english) + "</dd><dt>Funding</dt><dd>" + esc(p.funding) + "</dd></dl>" +
+          (p.confirm ? '<p class="confirm">Check: ' + esc(p.confirm) + "</p>" : "") +
+          (/^https:\/\//.test(p.url || "") ? '<p><a class="ext" href="' + esc(p.url) + '" target="_blank" rel="noopener noreferrer">Official page: ' + esc(p.url.replace(/^https:\/\/(www\.)?/, "").split("/")[0]) + " ↗</a></p>" : "") +
+          '<label class="field">My status<select class="status-sel" id="prog-' + esc(p.id) + '" data-act="prog-status" data-id="' + esc(p.id) + '"' + (S.busy["programmes/" + p.id] ? " disabled" : dis()) + ">" + options(PROG_STATUS, p.status) + "</select></label></article>";
+      }).join("") + "</div>");
+    });
+    return html;
+  }
+
+  /* ---------- render ---------- */
+  var queued = false;
+  function render() {
+    if (queued) return; queued = true;
+    var ran = false, run = function () { if (ran) return; ran = true; queued = false; paint(); };
+    requestAnimationFrame(run); setTimeout(run, 150); /* the timer covers a tab whose frames are paused */
+  }
+  function paint() {
+    var v = currentView();
+    Array.prototype.forEach.call(document.querySelectorAll(".tabs a"), function (a) {
+      if (a.getAttribute("data-view") === v) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
+    });
+    document.getElementById("dateline").textContent = fmt(today(), true) + ", Dhaka time";
+    var a = document.activeElement, keep = a && a.id && $view.contains(a) ? { id: a.id, s: a.selectionStart, e: a.selectionEnd } : null;
+    var html;
+    if (S.dead) html = '<p class="note"><strong>Your plan cannot be loaded here.</strong> Open this page in Claude while signed in to your account. Your progress is saved to your account, not to this device.</p>';
+    else if (!allReady()) html = '<p class="note">' + (S.slow ? "<strong>Your data can't be reached yet.</strong> Check your connection. The page keeps trying." : "Loading your plan…") + "</p>";
+    else if (!S.tasks.length && !S.documents.length && !S.programmes.length) html = '<p class="note"><strong>Your plan has not been loaded yet.</strong> Tasks, documents and programmes will appear here once Claude adds them. You can already add your own tasks from the Today tab.</p>' + (v === "today" ? viewToday() : "");
+    else html = v === "plan" ? viewPlan() : v === "documents" ? viewDocuments() : v === "programmes" ? viewProgrammes() : viewToday();
+    $view.innerHTML = html;
+    if (keep) { var el = document.getElementById(keep.id); if (el) { el.focus(); try { if (keep.s != null) el.setSelectionRange(keep.s, keep.e); } catch (e) {} } }
+    var pending = Object.keys(S.busy).length;
+    $sync.className = "sync" + (S.readOnly || S.slow || !window.__local.persistent() ? " bad" : "");
+    $sync.textContent = S.dead ? "" : S.readOnly ? "Read only: changes are not saved" : S.slow ? "Not connected" : pending ? "Saving…" : allReady() ? (window.__local.persistent() ? "Saved on this device" : "Not saved: this browser blocks storage. Save a backup file.") : "";
+  }
+
+  /* ---------- writes (one at a time per document) ---------- */
+  function write(path, fn) {
+    if (!S.db || S.readOnly || S.busy[path]) return Promise.resolve(false);
+    S.busy[path] = true; render();
+    return fn().then(function () { return true; }, function (e) {
+      if (e && (e.code === "invalid_argument" || e.code === "revoked" || e.code === "not_granted")) S.readOnly = true;
+      toast(S.readOnly ? "This view cannot save changes." : "Could not save. Check your connection and try again.");
+      return false;
+    }).then(function (ok) { delete S.busy[path]; render(); return ok; });
+  }
+  function find(list, id) { for (var i = 0; i < list.length; i++) if (list[i].id === id) return list[i]; return null; }
+
+  $view.addEventListener("change", function (ev) {
+    var el = ev.target, act = el.getAttribute("data-act"), id = el.getAttribute("data-id");
+    if (act === "toggle") {
+      var t = find(S.tasks, id); if (!t) return;
+      var done = el.checked;
+      write("tasks/" + id, function () { return S.db.doc("tasks/" + id).update({ done: done, doneAt: done ? new Date().toISOString() : "" }); });
+    } else if (act === "doc-status") {
+      var v = el.value; write("documents/" + id, function () { return S.db.doc("documents/" + id).update({ status: v }); });
+    } else if (act === "prog-status") {
+      var s = el.value; write("programmes/" + id, function () { return S.db.doc("programmes/" + id).update({ status: s }); });
+    } else if (act === "tg-habits") { S.ui.habits = el.checked; saveUi(); render(); }
+    else if (act === "tg-done") { S.ui.hideDone = el.checked; saveUi(); render(); }
+  });
+  $view.addEventListener("input", function (ev) { var k = ev.target.getAttribute("data-draft"); if (k) S.draft[k] = ev.target.value; });
+  $view.addEventListener("click", function (ev) {
+    var el = ev.target.closest("button[data-act]"); if (!el) return;
+    var act = el.getAttribute("data-act"), id = el.getAttribute("data-id");
+    if (act === "filter") { S.ui.filter = id; saveUi(); render(); }
+    else if (act === "del-task") {
+      if (S.pendingDelete !== id) { S.pendingDelete = id; render(); return; }
+      S.pendingDelete = "";
+      write("tasks/" + id, function () { return S.db.doc("tasks/" + id).delete(); });
+    }
+  });
+  $view.addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    var kind = ev.target.getAttribute("data-form");
+    if (kind === "add") {
+      var title = (S.draft.title || "").trim(), date = S.draft.date || today();
+      if (!title) { toast("Write what the task is first."); return; }
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) { toast("Choose a day for the task."); return; }
+      var ref = S.db && S.db.collection("tasks").doc();
+      if (!ref) return;
+      write("tasks/" + ref.id, function () {
+        return ref.set({ title: title, detail: "", date: date, track: "both", programme: "", kind: "task", done: false, doneAt: "", custom: true, order: Date.now() });
+      }).then(function (ok) { if (ok) { S.draft.title = ""; S.draft.date = ""; toast("Task added for " + fmt(date) + "."); render(); } });
+    } else if (kind === "ielts") {
+      var d = S.draft.ieltsDate != null ? S.draft.ieltsDate : S.settings.ieltsDate || "";
+      var sc = (S.draft.ieltsScore != null ? S.draft.ieltsScore : S.settings.ieltsScore || "").trim();
+      write("settings/main", function () { return S.db.doc("settings/main").set({ ieltsDate: d, ieltsScore: sc }); })
+        .then(function (ok) { if (ok) { S.draft.ieltsDate = null; S.draft.ieltsScore = null; toast("IELTS details saved."); render(); } });
+    }
+  });
+  window.addEventListener("hashchange", function () { S.pendingDelete = ""; paint(); window.scrollTo(0, 0); });
+
+  /* ---------- backup (stand-alone copy only) ---------- */
+  function dhakaDay(iso) {
+    try { return new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Dhaka", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date(iso)); } catch (e) { return ""; }
+  }
+  function backupPanel() {
+    var h = '<section class="panel"><h2>Backup</h2><p class="row-detail">Your progress is saved in this browser, on this device only. Save a backup file now and then. Use it to move your progress to another device or browser.</p>';
+    if (S.pendingImport) {
+      var i = S.pendingImport.info, day = i.savedAt ? dhakaDay(i.savedAt) : "";
+      h += '<p class="confirm">Backup from ' + esc(day ? fmt(day, true) : "an unknown date") + ": " + esc(i.done + " of " + i.total) + " tasks done. Restoring replaces everything saved on this device.</p>" +
+        '<div class="filters"><button type="button" class="primary" data-act="backup-apply">Replace my progress</button><button type="button" data-act="backup-cancel">Cancel</button></div>';
+    } else {
+      h += '<div class="filters"><button type="button" class="primary" data-act="backup-save">Save a backup file</button>' +
+        '<label class="btnlike">Restore from a backup file<input class="vh" type="file" accept=".json,application/json" data-act="backup-file"></label></div>';
+    }
+    return h + "</section>";
+  }
+  function saveBackup() {
+    var name = "scholarship-progress-" + today() + ".json";
+    try {
+      var a = document.createElement("a");
+      a.href = URL.createObjectURL(new Blob([window.__local.exportText()], { type: "application/json" }));
+      a.download = name; document.body.appendChild(a); a.click();
+      setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
+      toast("Backup saved as " + name + ".");
+    } catch (e) { toast("This browser could not save the file."); }
+  }
+  $view.addEventListener("click", function (ev) {
+    var el = ev.target.closest("button[data-act]"); if (!el) return;
+    var act = el.getAttribute("data-act");
+    if (act === "backup-save") saveBackup();
+    else if (act === "backup-cancel") { S.pendingImport = null; render(); }
+    else if (act === "backup-apply" && S.pendingImport) {
+      var ok = window.__local.importText(S.pendingImport.text);
+      S.pendingImport = null; toast(ok ? "Backup restored." : "That backup could not be restored."); render();
+    }
+  });
+  $view.addEventListener("change", function (ev) {
+    var el = ev.target; if (el.getAttribute("data-act") !== "backup-file" || !el.files || !el.files[0]) return;
+    var f = el.files[0]; if (f.size > 5e6) { toast("That file is too big to be a backup."); return; }
+    var r = new FileReader();
+    r.onload = function () {
+      var info = window.__local.check(String(r.result));
+      if (!info) { toast("That file is not a Scholarship Tracker backup."); return; }
+      S.pendingImport = { text: String(r.result), info: info }; render();
+    };
+    r.onerror = function () { toast("The file could not be read."); };
+    r.readAsText(f);
+  });
+
+  /* ---------- data ---------- */
+  function start(db) {
+    if (!db) { S.dead = true; paint(); return; }
+    S.db = db;
+    var timer = setTimeout(function () { if (!allReady()) { S.slow = true; render(); } }, 10000);
+    function settle() { if (allReady()) { clearTimeout(timer); S.slow = false; } }
+    function fail() { clearTimeout(timer); S.ready.tasks = S.ready.documents = S.ready.programmes = true; S.readOnly = true; S.slow = true; render(); }
+    ["tasks", "documents", "programmes"].forEach(function (name) {
+      db.collection(name).onSnapshot(function (snap) {
+        S[name] = snap.docs.map(function (d) { var o = {}, b = d.data() || {}; for (var k in b) o[k] = b[k]; o.id = d.id; return o; });
+        S.ready[name] = true; settle(); render();
+      }, fail);
+    });
+    db.doc("settings/main").onSnapshot(function (snap) {
+      var b = snap.exists ? snap.data() || {} : {};
+      S.settings = { ieltsDate: b.ieltsDate || "", ieltsScore: b.ieltsScore || "" }; render();
+    }, function () {});
+  }
+  paint();
+  if (window.claude && typeof window.claude.use === "function") window.claude.use("db").then(start, function () { start(null); });
+  else start(null);
+  setInterval(function () { if (document.getElementById("dateline").textContent.indexOf(fmt(today(), true)) !== 0) paint(); }, 60000);
+})();
+</script>
+
+<script>if ("serviceWorker" in navigator && /^https?:$/.test(location.protocol)) window.addEventListener("load", function () { navigator.serviceWorker.register("sw.js").catch(function () {}); });</script>
+</body></html>
